@@ -54,8 +54,14 @@
     align-items: center;
     }
 
-.logo img{
-    height: 140px;
+header nav div a img{    
+    height: 120px;
+    
+
+}
+
+header nav{
+    background-color: burlywood;
 }
 
 /* header{
@@ -278,9 +284,6 @@ box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
 
 /*---Accesorios---*/
 
-/* .imagen-accesorios{
-    background-image: url(../img/nosotros.jpg);
-} */
 
 /*---Indumentaria--- */
 
@@ -290,39 +293,26 @@ box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
 .contacto{
     background-image: url(../img/alessandra-caretto-cAY9X4rPG3g-unsplash.jpg);
     width: 100%;
-    height: 600px;
+    height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
-    padding: 15px;
-}
-
-.formulario{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-}
-
-.genero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.genero-items{
-    margin: 10px;
-    
+    align-content: center;
+    padding: 5px;
 }
 
 .caja-comentarios{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
 }
+
 
 
 
