@@ -17,7 +17,7 @@
 
 /*---HEADER---*/
 
-/* header div a img{
+header div a img{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -25,12 +25,12 @@
     height: 120px;
     padding: 0;
     margin: 0;
-    } */
+    } 
 
 
-/* header nav{
+header nav{
     background-color: rgb(225, 188, 139);
-} */
+} 
 
 header nav form button{
     border: 2px solid rgb(59, 52, 52);
@@ -174,9 +174,12 @@ section p{
 box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
 }
 
-.producto-contenedor div a{
-    transition: 0.5s;
+
+.productos div img{ 
+    width: 100%;
+    height: 270px;
 }
+
 
 .producto-contenedor div a:hover{
     color: white;
@@ -184,10 +187,7 @@ box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
     border-radius: 5px;
 }
 
-.productos div img{ 
-    width: 100%;
-    height: 270px;
-}
+
 
 .productos h3{
     margin: 15px;
@@ -203,6 +203,7 @@ box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
     padding: 5px;
     margin: 10px;
     font-family: 'Poltawski Nowy', serif;
+    transition: 0.5s;
 }
 
 /* ---Grid-Contenedor--- */
@@ -240,24 +241,186 @@ box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
     grid-row: span 2;
 }
 
-
-/* ---Categorias--- */
-
-
 /*---Accesorios---*/
+.imagen-accesorios p{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    
+}
+
+.accesorios-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.accesorios-tarjetas div{
+    border: 2px solid black;
+    width: 290px;
+    height: 400px;
+    text-align: center;
+    margin: 18px;
+    box-sizing: 1px;
+    object-fit: cover;
+    -webkit-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+-moz-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+}
+
+.accesorios-tarjetas div img{
+    width: 100%;
+    height: 270px;
+}
+
+.accesorios-tarjetas h3{
+    margin: 15px;
+    padding: 15px;
+    font-family: 'Poltawski Nowy', serif;;
+    font-size: 25px;
+    text-align: center;
+}
+
+.accesorios-tarjetas div a{
+    background-color:  burlywood;
+    color: #272929;
+    padding: 5px;
+    margin: 10px;
+    font-family: 'Poltawski Nowy', serif;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.5s;
+}
+
+.accesorios-tarjetas div a:hover{
+    color: white;
+    background-color: coral;
+    border-radius: 5px;
+}
+
+
 
 
 /*---Indumentaria--- */
-.indumentaria{
-    background-image: url(../img/matteo-stroppaghetti-yiVFSP0Sr4g-unsplash.jpg);
-    padding: 0;
-    margin: 0;
+
+.indumentaria p{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    
+}
+
+.indumentaria-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+.indumentaria-tarjetas div{
+    border: 2px solid black;
+    width: 290px;
+    height: 400px;
+    text-align: center;
+    margin: 18px;
+    box-sizing: 1px;
+    object-fit: cover;
+    -webkit-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+-moz-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+}
+
+.indumentaria-tarjetas div img{
     width: 100%;
-    height: 700px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
+    height: 270px;
+}
+
+.indumentaria-tarjetas h3{
+    margin: 15px;
+    padding: 15px;
+    font-family: 'Poltawski Nowy', serif;;
+    font-size: 25px;
+    text-align: center;
+}
+
+.indumentaria-tarjetas div a{
+    background-color:  burlywood;
+    color: #272929;
+    padding: 5px;
+    margin: 10px;
+    font-family: 'Poltawski Nowy', serif;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.5s;
+}
+
+.indumentaria-tarjetas div a:hover{
+    color: white;
+    background-color: coral;
+    border-radius: 5px;
+}
+
+/* ---OFERTAS--- */
+
+.ofertas p{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    
+}
+
+.ofertas-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+.ofertas-tarjetas div{
+    border: 2px solid black;
+    width: 290px;
+    height: 400px;
+    text-align: center;
+    margin: 18px;
+    box-sizing: 1px;
+    object-fit: cover;
+    -webkit-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+-moz-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+}
+
+.ofertas-tarjetas div img{
+    width: 100%;
+    height: 270px;
+}
+
+.ofertas-tarjetas h3{
+    margin: 15px;
+    padding: 15px;
+    font-family: 'Poltawski Nowy', serif;;
+    font-size: 25px;
+    text-align: center;
+}
+
+.ofertas-tarjetas div a{
+    background-color:  burlywood;
+    color: #272929;
+    padding: 5px;
+    margin: 10px;
+    font-family: 'Poltawski Nowy', serif;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.5s;
+}
+
+.ofertas-tarjetas div a:hover{
+    color: white;
+    background-color: coral;
+    border-radius: 5px;
 }
 
 
@@ -317,9 +480,7 @@ box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
     
 }
 
-div.genero-items{
 
-}
 
 .caja-comentarios h3{
     background-color: burlywood;
@@ -343,7 +504,7 @@ div.genero-items{
 
 /*---FOOTER---*/
 
-footer{
+/* footer{
     background-color: rgb(19, 18, 18);
     top: 0;
     display: flex;
@@ -353,6 +514,11 @@ footer{
     padding: 0;
     margin: 0;
 }
+
+footer nav ul li{
+    display: inline-block;
+}
+
 
 footer nav ul li a{
         text-decoration: none;
@@ -367,11 +533,9 @@ footer nav ul li a{
 
 footer nav ul li a:hover{
     color: coral;
-}
+} */
 
-footer nav ul li{
-    display: inline-block;
-}
+
 
 .parrafo-footer{
     padding: 10px;
@@ -387,7 +551,7 @@ footer nav ul li{
     position: fixed;
     right: 50px;
     bottom: 50px;
-}
+} 
 
 /* ---media queries--- */
 
@@ -631,14 +795,11 @@ footer nav ul li{
 
     .producto-contenedor div{
         width: 35%;
-        height: ;
         margin: 12px;
         box-sizing: 1px;
     }
 
     .productos div img{ 
-        width: ;
-        height: %;
         padding: 0;
         margin: 0;
     }
@@ -811,7 +972,7 @@ footer nav ul li{
     width: 100%;
     margin-top: 50px;
     display: grid;
-    grid-template-columns: (3fr,1fr)
+    grid-template-columns: (3fr,1fr);
     gap: 5px;
     display: none;
 }

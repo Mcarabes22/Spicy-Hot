@@ -11,7 +11,7 @@
 
 header {
   background-color: #e1bc8b; }
-  header div a img {
+  header nav div a img {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -19,18 +19,18 @@ header {
     height: 120px;
     padding: 0;
     margin: 0; }
-  header div button {
+  header nav div button {
     border: 2px solid #3b3434;
     border-radius: 5px;
     padding: 6px;
     transition: 0.5s; }
-  header div nav ul li a {
+  header nav div ul li a {
     color: #282732;
     font-weight: bold;
     font-size: 25px;
     font-family: 'Poltawski Nowy', serif;
     transition: 0.5s; }
-    header div nav ul li a:hover {
+    header nav div ul li a:hover {
       background-color: #e1bc8b;
       color: white; }
 
@@ -43,9 +43,9 @@ footer {
   align-items: center;
   padding: 0;
   margin: 0; }
-  footer nav div ul li {
+  footer nav ul li {
     display: inline-block; }
-    footer nav div ul li a {
+    footer nav ul li a {
       text-decoration: none;
       list-style: none;
       color: white;
@@ -54,5 +54,15 @@ footer {
       display: inline-block;
       margin: 10px 10px 10px 10px;
       transition: 0.5s; }
-    footer nav div ul li:hover {
-      color: coral; }
+      footer nav ul li a:hover {
+        color: coral; }
+  footer .redes-sociales a {
+    display: inline-block;
+    padding: 10px; }
+  footer .parrafo-footer p {
+    padding: 10px;
+    color: black; }
+  footer .fixed {
+    position: fixed;
+    right: 50px;
+    bottom: 50px; }
