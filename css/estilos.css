@@ -9,33 +9,8 @@
   list-style: none;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
-header {
-  background-color: #e1bc8b; }
-  header nav div a img {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 5px 5px 5px 5px;
-    height: 120px;
-    padding: 0;
-    margin: 0; }
-  header nav div button {
-    border: 2px solid #3b3434;
-    border-radius: 5px;
-    padding: 6px;
-    transition: 0.5s; }
-  header nav div ul li a {
-    color: #282732;
-    font-weight: bold;
-    font-size: 25px;
-    font-family: 'Poltawski Nowy', serif;
-    transition: 0.5s; }
-    header nav div ul li a:hover {
-      background-color: #e1bc8b;
-      color: white; }
-
 footer {
-  background-color: #131212;
+  background-color: aquamarine;
   top: 0;
   display: flex;
   flex-direction: column;

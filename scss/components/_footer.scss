@@ -1,50 +1,51 @@
-footer{
-        background-color: rgb(19, 18, 18);
-        top: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-nav{
-    ul{
-
-        li{
+footer {
+    background-color: aquamarine;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    
+    nav {
+        ul {
+            li {
                 display: inline-block;
-                
-                a{
+
+                a {
                     text-decoration: none;
                     list-style: none;
                     color: white;
                     font-size: 18px;
                     font-family: 'Poltawski Nowy', serif;
                     display: inline-block;
-                    margin: 10px 10px 10px 10px ;
+                    margin: 10px 10px 10px 10px;
                     transition: 0.5s;
-                    &:hover{
-                    color: coral;
+
+                    &:hover {
+                        color: coral;
                     }
                 }
-                    
-                }
+            }
         }
     }
-    .redes-sociales{
-        a{
+
+    .redes-sociales {
+        a {
             display: inline-block;
             padding: 10px;
         }
     }
-    
-        .parrafo-footer{
-            p{
-                padding: 10px;
-                color: black;  
-            }
-    }  
 
-    .fixed{
+    .parrafo-footer {
+        p {
+            padding: 10px;
+            color: black;
+        }
+    }
+
+    .fixed {
         position: fixed;
         right: 50px;
         bottom: 50px;
