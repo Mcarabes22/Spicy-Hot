@@ -1,5 +1,5 @@
-footer {
-    background-color: aquamarine;
+footer{
+    background-color: black;
     top: 0;
     display: flex;
     flex-direction: column;
@@ -7,47 +7,44 @@ footer {
     align-items: center;
     padding: 0;
     margin: 0;
-    
-    nav {
-        ul {
-            li {
-                display: inline-block;
-
-                a {
-                    text-decoration: none;
-                    list-style: none;
-                    color: white;
-                    font-size: 18px;
-                    font-family: 'Poltawski Nowy', serif;
-                    display: inline-block;
-                    margin: 10px 10px 10px 10px;
-                    transition: 0.5s;
-
-                    &:hover {
-                        color: coral;
+            nav{
+                ul{
+                    li{ 
+                        display: inline-block;  
+                        a{
+                            text-decoration: none;
+                            list-style: none;
+                            color: white;
+                            font-size: 18px;
+                            font-family: 'Poltawski Nowy', serif;
+                            display: inline-block;
+                            margin: 10px 10px 10px 10px;
+                            transition: 0.5s; 
+                                            &:hover {
+                                            color: coral;
+                                            }
+                        }
                     }
                 }
-            }
+                }
+
+    .redes-sociales{
+                    a{
+                    display: inline-block;
+                    padding: 10px; 
         }
     }
 
-    .redes-sociales {
-        a {
-            display: inline-block;
-            padding: 10px;
-        }
+    .parrafo-footer{
+                    p{
+                    padding: 10px;
+                    color: white; 
+                    }
     }
 
-    .parrafo-footer {
-        p {
-            padding: 10px;
-            color: black;
-        }
     }
-
-    .fixed {
-        position: fixed;
-        right: 50px;
-        bottom: 50px;
-    }
-}
+    .fixed{
+            position: fixed;
+            right: 50px;
+            bottom: 50px; 
+                }

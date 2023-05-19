@@ -9,8 +9,158 @@
   list-style: none;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
+header div a img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 5px 5px 5px;
+  height: 120px;
+  padding: 0;
+  margin: 0; }
+
+header nav {
+  background-color: #e1bc8b; }
+  header nav form button {
+    border: 2px solid #3b3434;
+    border-radius: 5px;
+    padding: 6px;
+    transition: 0.5s; }
+    header nav form button:hover {
+      background-color: #e1bc8b;
+      color: white; }
+  header nav ul li a {
+    color: #282732;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Poltawski Nowy', serif;
+    transition: 0.5s; }
+
+section div a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Poltawski Nowy', serif;
+  text-align: center; }
+
+.carousel-inner::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.72);
+  z-index: 1; }
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background-size: cover; }
+
+.carousel-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  bottom: 220px;
+  z-index: 2;
+  transition: 0.5s; }
+  .carousel-caption .btn:hover {
+    background-color: orangered;
+    color: white; }
+  .carousel-caption h5 {
+    color: wheat;
+    font-size: 45px;
+    font-family: 'Poltawski Nowy', serif;
+    letter-spacing: 2px;
+    margin-top: 25px; }
+  .carousel-caption p {
+    color: white;
+    width: 60%;
+    margin: auto;
+    font-size: 25px;
+    line-height: 1.9; }
+
+section h2 {
+  background-color: #a89070;
+  color: #282732;
+  border: black solid;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Poltawski Nowy', serif;
+  padding: 30px; }
+
+section p {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Poltawski Nowy', serif;
+  font-size: 20px; }
+
+.proyectos h3 {
+  font-size: 30px;
+  padding: 15px;
+  text-align: center;
+  font-family: 'Poltawski Nowy', serif;
+  text-decoration: underline; }
+
+.producto-contenedor {
+  display: flex;
+  justify-content: center; }
+  .producto-contenedor div {
+    border: 2px solid black;
+    width: 290px;
+    height: 400px;
+    text-align: center;
+    margin: 18px;
+    box-sizing: 1px;
+    object-fit: cover;
+    -webkit-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
+    -moz-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
+    box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72); }
+  .producto-contenedor img {
+    width: 100%;
+    height: 270px; }
+  .producto-contenedor h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Poltawski Nowy', serif;
+    margin: 15px;
+    padding: 15px; }
+  .producto-contenedor a {
+    background-color: burlywood;
+    color: #272929;
+    padding: 5px;
+    margin: 10px;
+    font-family: 'Poltawski Nowy', serif;
+    transition: 0.5s; }
+    .producto-contenedor a:hover {
+      color: white;
+      background-color: coral;
+      border-radius: 5px; }
+
+.grid-galeria {
+  width: 100%;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 5px; }
+  .grid-galeria div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 1px; }
+  .grid-galeria .img-2 {
+    grid-column: span 3; }
+  .grid-galeria .img-5 {
+    grid-row: span 2; }
+  .grid-galeria .img-7 {
+    grid-row: span 2; }
+  .grid-galeria .img-8 {
+    grid-row: span 2; }
+
 footer {
-  background-color: aquamarine;
+  background-color: black;
   top: 0;
   display: flex;
   flex-direction: column;
@@ -36,8 +186,9 @@ footer {
     padding: 10px; }
   footer .parrafo-footer p {
     padding: 10px;
-    color: black; }
-  footer .fixed {
-    position: fixed;
-    right: 50px;
-    bottom: 50px; }
+    color: white; }
+
+.fixed {
+  position: fixed;
+  right: 50px;
+  bottom: 50px; }
