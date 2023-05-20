@@ -1,0 +1,558 @@
+/*--Main--*/
+@media screen and (max-width:1500px){
+
+    .carousel-item{
+        
+        img{
+            height: 100vh;
+            min-height: 300px;
+            background-size: cover;
+        }
+    }
+}
+@media screen and (max-width:1300px){
+
+    .carousel-item{
+        img{
+            height: 100vh;
+            min-height: 300px;
+            background-size: cover;
+        }
+    }
+
+.carousel-caption{
+    
+    h5{
+        color: wheat;
+        font-size: 60px;
+        font-family: 'Poltawski Nowy', serif;
+        letter-spacing: 2px;
+        margin-top: 25px;
+    }
+    p{
+        color: white;
+        width: 100%;
+        margin: auto;
+        font-size: 40px;
+        line-height: 1.9;
+    }
+}
+/*---Tarjetas---*/
+
+.productos{
+    .proyectos{
+        h3{
+            margin: 10px;
+            padding: 5px;
+            font-family: 'Poltawski Nowy', serif;;
+            font-size: 25px;
+            text-align: center;
+        }
+        p{
+            padding: 15px;
+            text-align: center;
+            font-family: 'Poltawski Nowy', serif;
+            font-size: 20px;
+        }  
+        }
+        .producto-contenedor{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin: 10px;
+                padding: 10px;
+                transition: 0,5s;
+                a{
+                    background-color:  burlywood;
+                    color: #272929;
+                    padding: 3px;
+                    margin: 5px;
+                    font-family: 'Poltawski Nowy', serif;
+                    &:hover{
+                        color: white;
+                        background-color: coral;
+                        border-radius: 5px;
+                    }
+                }
+        div{
+            width: 35%;
+            margin: 12px;
+            box-sizing: 1px;
+        }
+    }
+    div{
+        }
+        img{
+            padding: 0;
+            margin: 0;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width:980px){
+
+
+    .carousel-item{
+        img{
+            height: 100vh;
+            min-height: 300px;
+            background-size: cover;
+        }
+    }
+
+        h5{
+        color: wheat;
+        font-size: 10px;
+        font-family: 'Poltawski Nowy', serif;
+        margin-top: auto;
+    
+        }
+        p{
+        color: white;
+        width: 100%;
+        margin: 10px;
+        font-size: 10px;
+        line-height: 1.9;
+        }
+    }
+        /*---Tarjetas---*/
+.productos{
+    .proyectos{
+        h3{
+            margin: 10px;
+            padding: 5px;
+            font-family: 'Poltawski Nowy', serif;;
+            font-size: 25px;
+            text-align: center;
+        }
+        p{
+            padding: 10px;
+            text-align: center;
+            font-family: 'Poltawski Nowy', serif;
+            font-size: 25px;
+        }  
+        }
+    }
+
+@media screen and (max-width:800px){
+    
+
+.carousel-item{
+    
+    
+                img{
+                    height: 100vh;
+                    min-height: 300px;
+                    background-size: cover;
+                }
+
+                h5{
+                    color: wheat;
+                    font-size: 30px;
+                    font-family: 'Poltawski Nowy', serif;
+                    margin-top: auto;    
+                }   
+
+                p{
+                    color: white;
+                    width: 100%;
+                    font-size: 25px;
+                    line-height: 1.9;  
+                }
+            
+            
+        }
+            /*---Tarjetas---*/
+        .productos{
+            .proyectos{
+                h3{
+                    margin: 10px;
+                    padding: 5px;
+                    font-family: 'Poltawski Nowy', serif;;
+                    font-size: 25px;
+                    text-align: center;
+                }
+                p{
+                    padding: 10px;
+                    text-align: center;
+                    font-family: 'Poltawski Nowy', serif;
+                    font-size: 25px;
+                }  
+                }
+            .producto-contenedor{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    flex-wrap: wrap;
+                    margin: 10px;
+                    padding: 10px;
+                    transition: 0,5s;
+            div{
+                width: 35%;
+                margin: 12px;
+                box-sizing: 1px;
+            }
+        }
+    
+        div{
+            
+            
+            a{
+                background-color:  burlywood;
+                color: #272929;
+                padding: 3px;
+                margin: 5px;
+                font-family: 'Poltawski Nowy', serif;
+                color: white;
+                background-color: coral;
+                border-radius: 5px;
+            }
+            img{
+
+                padding: 0;
+                margin: 0;
+            }
+        }
+        }
+        
+    }
+
+    @media screen and (max-width:710px){
+        .grid-galeria{
+        width: 100%;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: (3fr,1fr);
+        gap: 5px;
+        display: none;
+    }
+    
+    .grid-galeria div img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 1px;
+        
+    }
+    }
+
+    /*---Grid-galeria---*/
+    
+    
+    
+
+
+        /*---Tarjetas---*/
+
+@media screen and (max-width:750px){
+
+
+
+.productos{
+    .proyectos{
+        h3{
+            margin: 10px;
+            padding: 5px;
+            font-family: 'Poltawski Nowy', serif;;
+            font-size: 25px;
+            text-align: center;
+        }
+        p{
+            padding: 15px;
+            text-align: center;
+            font-family: 'Poltawski Nowy', serif;
+            font-size: 20px;
+        }  
+        }
+            .producto-contenedor{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    flex-wrap: wrap;
+                    margin: 10px;
+                    padding: 10px;
+                    transition: 0,5s;
+            div{
+                width: 50%;
+                margin: 12px;
+                box-sizing: 10px;
+            }
+        }
+
+        div{
+            a{
+                background-color:  burlywood;
+                color: #272929;
+                padding: 10px;
+                margin: 10px;
+                font-size: 15px;
+                font-family: 'Poltawski Nowy', serif;
+                color: white;
+                background-color: coral;
+                border-radius: 5px;
+            }
+            img{
+
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+            }
+            
+}
+@media screen and (max-width:600px){
+
+
+    .productos{
+        .proyectos{
+            h3{
+                margin: 10px;
+                padding: 5px;
+                font-family: 'Poltawski Nowy', serif;;
+                font-size: 25px;
+                text-align: center;
+            }
+            p{
+                padding: 15px;
+                text-align: center;
+                font-family: 'Poltawski Nowy', serif;
+                font-size: 20px;
+            }  
+            }
+                .producto-contenedor{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-content: center;
+                        flex-wrap: wrap;
+                        margin: 10px;
+                        padding: 10px;
+                        transition: 0,5s;
+                div{
+                    width: 80%;
+                    margin: 12px;
+                    box-sizing: 10px;
+                }
+            }
+    
+            div{
+                a{
+                    background-color:  burlywood;
+                    color: #272929;
+                    padding: 10px;
+                    margin: 10px;
+                    font-size: 15px;
+                    font-family: 'Poltawski Nowy', serif;
+                    color: white;
+                    background-color: coral;
+                    border-radius: 5px;
+                }
+                img{
+    
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+    
+                }
+
+
+
+
+
+    
+}
+
+
+
+
+    @media screen and (max-width:770px){
+        .carousel-caption{
+            transition: 0.5s;
+                    .btn{
+                        font-size: 30px;
+                        background-color: yellow;
+                        color: white;
+                    }
+        }
+    
+        .carousel-item{
+    
+    
+            img{
+                height: 100vh;
+                min-height: 300px;
+                background-size: cover;
+            }
+
+            h5{
+                color: wheat;
+                font-size: 30px;
+                font-family: 'Poltawski Nowy', serif;
+                margin-top: auto;    
+            }   
+
+            p{
+                color: white;
+                width: 100%;
+                font-size: 25px;
+                line-height: 1.9;  
+            }
+        
+        
+    }
+    
+    }
+
+    @media screen and (max-width:640px){
+        .carousel-caption{
+            transition: 0.5s;
+                    .btn{
+                        font-size: 60px;
+                        background-color: yellow;
+                        color: white;
+                    }
+        }
+    
+        .carousel-item{
+    
+    
+            img{
+                height: 100vh;
+                min-height: 300px;
+                background-size: cover;
+            }
+
+            h5{
+                color: wheat;
+                font-size: 30px;
+                font-family: 'Poltawski Nowy', serif;
+                margin-top: auto;    
+            }   
+
+            p{
+                color: white;
+                width: 100%;
+                font-size: 25px;
+                line-height: 1.9;  
+            }
+        
+        
+    }
+    
+    }
+    
+    @media screen and (max-width:400px){
+
+
+        .productos{
+            .proyectos{
+            h3{
+                margin: 10px;
+                padding: 5px;
+                font-family: 'Poltawski Nowy', serif;;
+                font-size: 25px;
+                text-align: center;
+            }
+            p{
+                padding: 15px;
+                text-align: center;
+                font-family: 'Poltawski Nowy', serif;
+                font-size: 20px;
+            }  
+            }
+            
+                    .producto-contenedor{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-content: center;
+                            flex-wrap: wrap;
+                            margin: 10px;
+                            padding: 10px;
+                            transition: 0,5s;
+                    div{
+                        width: 100%;
+                        margin: 12px;
+                        box-sizing: 10px;
+                    }
+                }
+        
+                div{
+                    a{
+                        background-color:  burlywood;
+                        color: #272929;
+                        padding: 10px;
+                        margin: 10px;
+                        font-size: 15px;
+                        font-family: 'Poltawski Nowy', serif;
+                        color: white;
+                        background-color: coral;
+                        border-radius: 5px;
+                    }
+                    img{
+        
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+        
+                    }
+
+    }
+        
+
+    /*---Footer---*/
+    
+    
+@media screen and (max-width:600px){
+    footer{
+        nav{
+            
+            ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                li{
+                    a{
+                        text-decoration: none;
+                        list-style: none;
+                        color: white;
+                        font-size: 15px;
+                        font-family: 'Poltawski Nowy', serif;
+                        margin: 15px;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+
+
+.redes-sociales{
+    a{
+        display: inline-block;
+        padding: 3px;
+        margin: 3px;
+    }
+}
+
+.parrafo-footer{
+            padding: 10px;
+            color: white;
+}
+
+.fixed{
+    display: none;
+    position: 0;
+    
+}
+}
