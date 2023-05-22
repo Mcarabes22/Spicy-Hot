@@ -1,7 +1,7 @@
 section {
         div {
             a {
-                color: white;
+                color: nth($colores, 2);
                 text-decoration: none;
                 font-family: 'Poltawski Nowy', serif;
                 text-align: center;
@@ -38,17 +38,17 @@ section {
 
     h5 {
         color: wheat;
-        font-size: 45px;
+        font-size: 50px;
         font-family: 'Poltawski Nowy', serif;
         letter-spacing: 2px;
         margin-top: 25px;
     }
 
     p {
-        color: white;
+        color: nth($colores, 2);
         width: 60%;
         margin: auto;
-        font-size: 25px;
+        font-size: 30px;
         line-height: 1.9;
     }
 
@@ -56,8 +56,8 @@ section {
         transition: 0.5s;
         .btn{
             &:hover {
-                background-color: orangered;
-                color: white;
+                background-color: $color-principal;
+                color: rgb(85, 85, 85);
             }
         }
     }
@@ -65,11 +65,11 @@ section {
 
 section {
     h2 {
-        background-color: rgb(168, 144, 112);
-        color: rgb(40, 39, 50);
+        background-color: $color-principal;
+        color: nth($colores,5);
         border: black solid;
         text-align: center;
-        font-size: 50px;
+        font-size: nth($font-size, 8);
         font-family: 'Poltawski Nowy', serif;
         padding: 30px;
     }
@@ -79,7 +79,7 @@ section {
 .productos {
     .proyectos{
         h3 {
-        font-size: 30px;
+        font-size: nth($font-size, 4);
         padding: 15px;
         text-align: center;
         font-family: 'Poltawski Nowy', serif;
@@ -89,15 +89,14 @@ section {
             padding: 15px;
             text-align: center;
             font-family: 'Poltawski Nowy', serif;
-            font-size: 20px;
+            font-size: nth($font-size, 3);
         }
     }
 }
 
 .producto-contenedor {
-    display: flex;
-    justify-content: center;
-
+    @include flex (flex, center, center)
+    
     div{
         border: 2px solid black;
         width: 290px;
@@ -118,7 +117,7 @@ section {
 
     h3{
         text-align: center;
-        font-size: 25px;
+        font-size: nth($font-size, 4);
         font-weight: bold;
         font-family: 'Poltawski Nowy', serif;
         margin: 15px;
@@ -126,7 +125,7 @@ section {
     }
 
     a{
-        background-color:  burlywood;
+        background-color:  $color-principal;
         color: #272929;
         padding: 5px;
         margin: 10px;
@@ -195,7 +194,8 @@ section {
     height: 700px;
     z-index: 2;
         h2{
-            background-color: burlywood;
+            color: #272929;
+            background-color: $color-principal;
             border: white solid;
             border-radius: 5px;
             padding: 1px;
@@ -206,7 +206,8 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    
+    
     div{
         border-radius: 1px white solid;
         padding: 5px;
@@ -216,7 +217,7 @@ section {
 
 .genero{
     h3{
-        background-color: burlywood;
+        background-color: $color-principal;
         border: white solid;
         border-radius: 5px;
         padding: 2px;
@@ -237,7 +238,7 @@ section {
     align-items: center;
     padding: 5px;
         h3{
-            background-color: burlywood;
+            background-color: $color-principal;
             border: white solid;
             border-radius: 5px;
             padding: 2px;
@@ -250,9 +251,14 @@ section {
 
 .imagen-accesorios{
                 p{
-                    display: flex;
-                    justify-content: center;
-                    font-size: 30px;
+                    @extend %flex;
+                    font-size: nth($font-size, 5);
+                    padding: 15px;
+                    text-align: center;
+                    font-family: 'Poltawski Nowy', serif;
+                    br{
+                        font-size: 35px;
+                    }
                 }
 }
 
@@ -273,6 +279,7 @@ section {
             -moz-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
             box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
                 }
+                
 
 
     img{
@@ -283,11 +290,11 @@ section {
         margin: 15px;
         padding: 15px;
         font-family: 'Poltawski Nowy', serif;;
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
     }
     a{
-        background-color:  burlywood;
+        background-color:  $color-principal;
         color: #272929;
         padding: 5px;
         margin: 10px;
@@ -307,9 +314,12 @@ section {
 
 .indumentaria{
             p{
-                display: flex;
-                justify-content: center;
-                font-size: 30px;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 30px;
+                    padding: 15px;
+                    text-align: center;
+                    font-family: 'Poltawski Nowy', serif;;
             }
 }
 .indumentaria-tarjetas{
@@ -341,7 +351,7 @@ section {
                 text-align: center;
             }
             a{
-                background-color:  burlywood;
+                background-color:  $color-principal;
                 color: #272929;
                 padding: 5px;
                 margin: 10px;
@@ -361,9 +371,12 @@ section {
 
 .ofertas{
         p{
-            display: flex;
-            justify-content: center;
-            font-size: 30px;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 30px;
+                    padding: 15px;
+                    text-align: center;
+                    font-family: 'Poltawski Nowy', serif;;
         }
 }
 .ofertas-tarjetas{
@@ -398,7 +411,7 @@ section {
             }
 
             a{
-            background-color:  burlywood;
+            background-color:  $color-principal;
             color: #272929;
             padding: 5px;
             margin: 10px;
