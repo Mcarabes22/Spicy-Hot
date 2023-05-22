@@ -95,8 +95,8 @@ section {
 }
 
 .producto-contenedor {
-    @include flex (flex, center, center)
-    
+    @include flex (flex, center, center);
+
     div{
         border: 2px solid black;
         width: 290px;
