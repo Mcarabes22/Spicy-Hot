@@ -122,7 +122,14 @@ section h2 {
     object-fit: cover;
     -webkit-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
     -moz-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
-    box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72); }
+    box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
+    transition: 0.5s; }
+    .producto-contenedor div:hover {
+      transform: scale(1.1);
+      object-fit: cover;
+      -webkit-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
+      -moz-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
+      box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72); }
   .producto-contenedor img {
     width: 100%;
     height: 270px; }
@@ -145,25 +152,25 @@ section h2 {
       background-color: coral;
       border-radius: 5px; }
 
-.grid-galeria {
+.grid-container .grid-galeria {
   width: 100%;
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 250px;
   gap: 5px; }
-  .grid-galeria div img {
+  .grid-container .grid-galeria div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     padding: 1px; }
-  .grid-galeria .img-2 {
+  .grid-container .grid-galeria .img-2 {
     grid-column: span 3; }
-  .grid-galeria .img-5 {
+  .grid-container .grid-galeria .img-5 {
     grid-row: span 2; }
-  .grid-galeria .img-7 {
+  .grid-container .grid-galeria .img-7 {
     grid-row: span 2; }
-  .grid-galeria .img-8 {
+  .grid-container .grid-galeria .img-8 {
     grid-row: span 2; }
 
 /*--contacto--*/
@@ -247,7 +254,14 @@ section h2 {
     object-fit: cover;
     -webkit-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
     -moz-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
-    box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72); }
+    box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
+    transition: 1s; }
+    .accesorios-tarjetas div:hover {
+      transform: scale(1.1);
+      object-fit: cover;
+      -webkit-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
+      -moz-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
+      box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72); }
   .accesorios-tarjetas img {
     width: 100%;
     height: 270px; }
@@ -294,7 +308,14 @@ section h2 {
     object-fit: cover;
     -webkit-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
     -moz-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
-    box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72); }
+    box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
+    transition: 1s; }
+    .indumentaria-tarjetas div:hover {
+      transform: scale(1.1);
+      object-fit: cover;
+      -webkit-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
+      -moz-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
+      box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72); }
   .indumentaria-tarjetas img {
     width: 100%;
     height: 270px; }
@@ -341,7 +362,14 @@ section h2 {
     object-fit: cover;
     -webkit-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
     -moz-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
-    box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72); }
+    box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
+    transition: 1s; }
+    .ofertas-tarjetas div:hover {
+      transform: scale(1.1);
+      object-fit: cover;
+      -webkit-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
+      -moz-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
+      box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72); }
   .ofertas-tarjetas img {
     width: 100%;
     height: 270px; }
@@ -366,6 +394,7 @@ section h2 {
       border-radius: 5px; }
 
 footer {
+  transition: 1s;
   background-color: black;
   top: 0;
   display: flex;
@@ -394,15 +423,20 @@ footer {
   footer .redes-sociales a {
     display: inline-block;
     padding: 10px; }
+    footer .redes-sociales a:hover {
+      transform: scale(1.1); }
   footer .parrafo-footer p {
     font-size: 20px;
     padding: 10px;
     color: white; }
 
 .fixed {
+  transition: 1s;
   position: fixed;
   right: 50px;
   bottom: 50px; }
+  .fixed:hover {
+    transform: scale(1.1); }
 
 iframe {
   width: 100%;

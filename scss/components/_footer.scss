@@ -1,4 +1,5 @@
 footer{
+    transition: 1s;
     background-color: black;
     top: 0;
     display: flex;
@@ -37,6 +38,9 @@ footer{
                     a{
                     display: inline-block;
                     padding: 10px; 
+                    &:hover{
+                        transform: scale(1.1);
+                    }
         }
     }
 
@@ -50,9 +54,13 @@ footer{
 
     }
     .fixed{
+        transition: 1s;
             position: fixed;
             right: 50px;
             bottom: 50px; 
+            &:hover{
+                transform: scale(1.1);
+                }
                 }
 
                 iframe{

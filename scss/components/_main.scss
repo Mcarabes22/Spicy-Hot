@@ -96,7 +96,7 @@ section {
 
 .producto-contenedor {
     @include flex (flex, center, center);
-
+    
     div{
         border: 2px solid black;
         width: 290px;
@@ -108,6 +108,14 @@ section {
         -webkit-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
     -moz-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
     box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.1);
+        object-fit: cover;
+        -webkit-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+    -moz-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+    box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+    }
     }
 
     img{
@@ -138,44 +146,56 @@ section {
         }
     }
 }
-.grid-galeria{
+.grid-container{
+
+    .grid-galeria{
+        width: 100%;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: 250px;
+        gap: 5px;
+        
+
+        div{
+            
+            img{
                 width: 100%;
-                margin-top: 50px;
-                display: grid;
-                grid-template-columns: repeat(3,1fr);
-                grid-auto-rows: 250px;
-                gap: 5px;
-                div{
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        padding: 1px;
-                    }
-                }
+                height: 100%;
+                object-fit: cover;
+                padding: 1px;
+                
+            }
+        }
 
-                .img-2{
-                    grid-column: span 3;
-                }
-                .img-4{
-
-                }
-                .img-5{
-                    grid-row: span 2;
-                }
-                .img-6{
-
-                }
-                .img-7{
-                    grid-row: span 2;
-                }
-                .img-8{
-                    grid-row: span 2;
-                }
-                .img-9{
-
-                }
+        .img-2{
+            grid-column: span 3;
+            
+        }
+        .img-4{
+            
+        }
+        .img-5{
+            grid-row: span 2;
+            
+        }
+        .img-6{
+            
+        }
+        .img-7{
+            grid-row: span 2;
+            
+        }
+        .img-8{
+            grid-row: span 2;
+            
+        }
+        .img-9{
+            
+        }
+    }
 }
+
 
 /*--contacto--*/
 
@@ -278,6 +298,14 @@ section {
                 -webkit-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
             -moz-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
             box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+                object-fit: cover;
+                -webkit-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+            -moz-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+            box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+            }
                 }
                 
 
@@ -338,6 +366,14 @@ section {
                 -webkit-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
             -moz-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
             box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+                object-fit: cover;
+                -webkit-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+            -moz-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+            box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+            }
             }
             img{
                 width: 100%;
@@ -395,6 +431,14 @@ section {
                 -webkit-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
             -moz-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
             box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+                object-fit: cover;
+                -webkit-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+            -moz-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+            box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+            }
             }
 
             img{
