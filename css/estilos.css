@@ -9,7 +9,7 @@
   list-style: none;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
-.imagen-accesorios p {
+.accesorios .imagen-accesorios p {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -19,29 +19,37 @@ header div a img {
   justify-content: flex-start;
   align-items: center;
   padding: 5px 5px 5px 5px;
-  height: 120px;
-  padding: 0;
-  margin: 0; }
+  height: 120px; }
 
 header nav {
-  background-color: burlywood; }
-  header nav form button {
-    border: 2px solid #3b3434;
-    border-radius: 5px;
-    padding: 6px;
+  height: 110px;
+  background: rgba(0, 0, 0, 0.6); }
+  header nav .nav-link {
+    color: white;
     transition: 0.5s; }
-    header nav form button:hover {
+    header nav .nav-link:hover {
+      color: grey; }
+  header nav form {
+    border-radius: 15px;
+    color: wheat; }
+    header nav form button {
       background-color: burlywood;
-      color: white; }
+      border: 2px solid #3b3434;
+      border-radius: 10px;
+      padding: 6px;
+      transition: 0.5s; }
+      header nav form button:hover {
+        background-color: burlywood;
+        color: white; }
   header nav ul li a {
-    color: #282732;
+    color: white;
     font-weight: bold;
     font-size: 25px;
     font-family: 'Poltawski Nowy', serif;
     transition: 0.5s; }
 
 section div a {
-  color: white;
+  color: rgba(255, 255, 255, 0.51);
   text-decoration: none;
   font-family: 'Poltawski Nowy', serif;
   text-align: center; }
@@ -69,40 +77,54 @@ section div a {
   bottom: 220px;
   z-index: 2; }
   .carousel-caption h5 {
-    color: wheat;
+    color: #ddb874;
     font-size: 50px;
+    font-weight: 15px;
     font-family: 'Poltawski Nowy', serif;
     letter-spacing: 2px;
     margin-top: 25px; }
   .carousel-caption p {
-    color: white;
+    color: rgba(255, 255, 255, 0.51);
     width: 60%;
     margin: auto;
     font-size: 30px;
     line-height: 1.9; }
   .carousel-caption p {
-    transition: 0.5s; }
-    .carousel-caption p .btn:hover {
-      background-color: burlywood;
-      color: #555555; }
+    transition: 1s; }
+    .carousel-caption p .btn {
+      background-color: #bd9d73;
+      color: black;
+      letter-spacing: 2px;
+      font-weight: 10px; }
+      .carousel-caption p .btn:hover {
+        background-color: burlywood;
+        transform: scale(1.1);
+        color: #282732;
+        border-radius: 5px; }
 
-section h2 {
-  background-color: burlywood;
-  color: #282732;
-  border: black solid;
+.subtitulo h2 {
+  background-image: url(../img/productosfondo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: rgba(255, 255, 255, 0.51);
   text-align: center;
+  letter-spacing: 20px;
+  font-weight: 10px;
   font-size: 50px;
   font-family: 'Poltawski Nowy', serif;
   padding: 30px; }
 
-.productos .proyectos h3 {
-  font-size: 25px;
+.productos h3 {
+  color: black;
+  font-size: 30px;
   padding: 15px;
   text-align: center;
   font-family: 'Poltawski Nowy', serif;
   text-decoration: underline; }
 
-.productos .proyectos p {
+.productos p {
+  color: black;
   padding: 15px;
   text-align: center;
   font-family: 'Poltawski Nowy', serif;
@@ -120,6 +142,7 @@ section h2 {
     margin: 18px;
     box-sizing: 1px;
     object-fit: cover;
+    border-radius: 15px;
     -webkit-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
     -moz-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
     box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
@@ -129,10 +152,12 @@ section h2 {
       object-fit: cover;
       -webkit-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
       -moz-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
-      box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72); }
+      box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
+      box-sizing: 1px; }
   .producto-contenedor img {
     width: 100%;
-    height: 270px; }
+    height: 270px;
+    border-radius: 11px; }
   .producto-contenedor h3 {
     text-align: center;
     font-size: 25px;
@@ -175,8 +200,8 @@ section h2 {
 
 /*--contacto--*/
 .contacto {
-  background-image: url(../img/alessandra-caretto-cAY9X4rPG3g-unsplash.jpg);
-  padding: 15px;
+  background-image: url(../img/fondocontacto2.jpg);
+  padding: 115px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -189,11 +214,13 @@ section h2 {
   height: 700px;
   z-index: 2; }
   .contacto h2 {
-    color: #272929;
-    background-color: burlywood;
-    border: white solid;
+    color: #e2ecec;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
     border-radius: 5px;
-    padding: 1px;
+    padding: 3px;
+    font-size: 30px;
     font-family: 'Poltawski Nowy', serif; }
 
 .formulario {
@@ -201,13 +228,15 @@ section h2 {
   flex-direction: column;
   align-items: center; }
   .formulario div {
+    color: #272929;
     border-radius: 1px white solid;
     padding: 5px;
     margin: 2px; }
 
 .genero h3 {
-  background-color: burlywood;
-  border: white solid;
+  color: #e2ecec;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 2px;
   margin: 3px;
@@ -224,66 +253,75 @@ section h2 {
   align-items: center;
   padding: 5px; }
   .caja-comentarios h3 {
-    background-color: burlywood;
-    border: white solid;
+    color: #e2ecec;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 2px;
     font-family: 'Poltawski Nowy', serif; }
 
 /*--Accesorios--*/
-.imagen-accesorios p {
-  font-size: 30px;
-  padding: 15px;
-  text-align: center;
-  font-family: 'Poltawski Nowy', serif; }
-  .imagen-accesorios p br {
-    font-size: 35px; }
-
-.accesorios-tarjetas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
-  .accesorios-tarjetas div {
-    border: 2px solid black;
-    width: 290px;
-    height: 400px;
+.accesorios {
+  background-image: url(../img/fondoaccesorios2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .accesorios .imagen-accesorios p {
+    font-size: 30px;
+    padding-top: 115px;
     text-align: center;
-    margin: 18px;
-    box-sizing: 1px;
-    object-fit: cover;
-    -webkit-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
-    -moz-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
-    box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
-    transition: 1s; }
-    .accesorios-tarjetas div:hover {
-      transform: scale(1.1);
+    font-family: 'Poltawski Nowy', serif; }
+    .accesorios .imagen-accesorios p br {
+      font-size: 35px; }
+  .accesorios .accesorios-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .accesorios .accesorios-tarjetas div {
+      border: 2px solid black;
+      width: 290px;
+      height: 400px;
+      text-align: center;
+      margin: 18px;
+      box-sizing: 1px;
+      border-radius: 15px;
       object-fit: cover;
-      -webkit-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
-      -moz-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
-      box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72); }
-  .accesorios-tarjetas img {
-    width: 100%;
-    height: 270px; }
-  .accesorios-tarjetas h3 {
-    margin: 15px;
-    padding: 15px;
-    font-family: 'Poltawski Nowy', serif;
-    font-size: 20px;
-    text-align: center; }
-  .accesorios-tarjetas a {
-    background-color: burlywood;
-    color: #272929;
-    padding: 5px;
-    margin: 10px;
-    font-family: 'Poltawski Nowy', serif;
-    text-decoration: none;
-    list-style: none;
-    transition: 0.5s; }
-    .accesorios-tarjetas a:hover {
-      color: white;
-      background-color: coral;
-      border-radius: 5px; }
+      -webkit-box-shadow: 6px -6px 14px 1px rgba(98, 94, 94, 0.477);
+      -moz-box-shadow: 6px -6px 14px 1px rgba(98, 94, 94, 0.477);
+      box-shadow: 6px -6px 14px 1px rgba(98, 94, 94, 0.477);
+      transition: 1s; }
+      .accesorios .accesorios-tarjetas div:hover {
+        transform: scale(1.1);
+        object-fit: cover;
+        -webkit-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
+        -moz-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
+        box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72); }
+    .accesorios .accesorios-tarjetas img {
+      width: 100%;
+      height: 270px;
+      border-radius: 11px; }
+    .accesorios .accesorios-tarjetas h3 {
+      background-color: rgba(0, 0, 0, 0.545);
+      color: #c1c1c1;
+      padding: 10px;
+      margin: 10px;
+      font-family: 'Poltawski Nowy', serif;
+      font-size: 20px;
+      text-align: center; }
+    .accesorios .accesorios-tarjetas a {
+      background-color: rgba(0, 0, 0, 0.545);
+      color: #c1c1c1;
+      padding: 5px;
+      margin: 15px;
+      font-family: 'Poltawski Nowy', serif;
+      text-decoration: none;
+      list-style: none;
+      transition: 0.5s; }
+      .accesorios .accesorios-tarjetas a:hover {
+        color: #f0e9e9;
+        background-color: #2f2e2e;
+        border-radius: 5px; }
 
 /*--Indumentaria--*/
 .indumentaria p {
@@ -305,6 +343,7 @@ section h2 {
     text-align: center;
     margin: 18px;
     box-sizing: 1px;
+    border-radius: 15px;
     object-fit: cover;
     -webkit-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
     -moz-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
@@ -318,7 +357,8 @@ section h2 {
       box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72); }
   .indumentaria-tarjetas img {
     width: 100%;
-    height: 270px; }
+    height: 270px;
+    border-radius: 11px; }
   .indumentaria-tarjetas h3 {
     margin: 15px;
     padding: 15px;
@@ -359,6 +399,7 @@ section h2 {
     text-align: center;
     margin: 18px;
     box-sizing: 1px;
+    border-radius: 15px;
     object-fit: cover;
     -webkit-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
     -moz-box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72);
@@ -372,7 +413,8 @@ section h2 {
       box-shadow: 6px -6px 14px 1px rgba(0, 0, 0, 0.72); }
   .ofertas-tarjetas img {
     width: 100%;
-    height: 270px; }
+    height: 270px;
+    border-radius: 11px; }
   .ofertas-tarjetas h3 {
     margin: 15px;
     padding: 15px;
@@ -445,7 +487,13 @@ iframe {
   padding: 0; }
 
 /*--Main--*/
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 2710px) {
+  header div a img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 5px 5px 5px;
+    height: 120px; }
   .carousel-item img {
     height: 100vh;
     min-height: 300px;
@@ -473,7 +521,7 @@ iframe {
     margin: 10px;
     padding: 5px;
     font-family: 'Poltawski Nowy', serif;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center; }
   .productos .proyectos p {
     padding: 15px;
@@ -506,6 +554,13 @@ iframe {
     margin: 0; } }
 
 @media screen and (max-width: 980px) {
+  header div a img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3px 3px 3px 3px;
+    height: 95px;
+    margin: 0; }
   .carousel-item img {
     height: 100vh;
     min-height: 300px;
@@ -527,7 +582,7 @@ iframe {
   margin: 10px;
   padding: 5px;
   font-family: 'Poltawski Nowy', serif;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center; }
 
 .productos .proyectos p {
@@ -702,6 +757,7 @@ iframe {
   .carousel-item p {
     color: white;
     width: 100%;
+    margin: auto;
     font-size: 25px;
     line-height: 1.9; } }
 

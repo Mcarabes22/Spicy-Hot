@@ -1,5 +1,18 @@
 /*--Main--*/
-@media screen and (max-width:1500px){
+@media screen and (max-width:2710px){
+
+    header{
+        div{
+            a{
+                img{
+                @include flex (flex, flex-start, center);
+                padding: 5px 5px 5px 5px;
+                height: 120px;
+            }
+        }
+    }
+    }
+
 
     .carousel-item{
         
@@ -45,7 +58,7 @@
             margin: 10px;
             padding: 5px;
             font-family: 'Poltawski Nowy', serif;;
-            font-size: 25px;
+            font-size: nth($font-size, 5);
             text-align: center;
         }
         p{
@@ -88,10 +101,26 @@
         }
     }
     
-}
+    }
+
 
 
 @media screen and (max-width:980px){
+
+    header{
+        div{
+            
+            a{
+                img{
+                @include flex (flex, flex-start, center);
+                padding: 3px 3px 3px 3px;
+                height: 95px;
+                margin: 0;
+            }
+        }
+    }
+
+    }
 
 
     .carousel-item{
@@ -124,7 +153,7 @@
             margin: 10px;
             padding: 5px;
             font-family: 'Poltawski Nowy', serif;;
-            font-size: 20px;
+            font-size: nth($font-size, 5);
             text-align: center;
         }
         p{
@@ -400,6 +429,7 @@
             p{
                 color: white;
                 width: 100%;
+                margin: auto;
                 font-size: 25px;
                 line-height: 1.9;  
             }
