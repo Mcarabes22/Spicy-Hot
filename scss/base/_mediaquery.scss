@@ -53,7 +53,7 @@
 /*---Tarjetas---*/
 
 .productos{
-    .proyectos{
+    
         h3{
             margin: 10px;
             padding: 5px;
@@ -72,18 +72,18 @@
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                margin: 10px;
-                padding: 10px;
+                margin: 0;
+                padding: 0;
                 transition: 0,5s;
                 a{
-                    background-color:  burlywood;
-                    color: #272929;
+                    background-color:  nth($colores, 4);
+                    color: $color-principal;
                     padding: 3px;
                     margin: 5px;
                     font-family: 'Poltawski Nowy', serif;
                     &:hover{
-                        color: white;
-                        background-color: coral;
+                        color: rgb(240, 233, 233);
+                        background-color: rgb(47, 46, 46);
                         border-radius: 5px;
                     }
                 }
@@ -94,14 +94,14 @@
         }
     }
     div{
-        }
+        
         img{
             padding: 0;
             margin: 0;
         }
+        }
     }
-    
-    }
+
 
 
 
@@ -119,6 +119,18 @@
             }
         }
     }
+        .navbar-toggler{
+            padding: 0.25rem 0.75rem;
+            font-size: 1.25rem;
+            line-height: 1;
+            background-color: black;
+            border: 2px solid white;
+            border-radius: 0.25rem;
+            transition: box-shadow .15s ease-in-ou
+        }
+        
+
+
 
     }
 
@@ -147,6 +159,7 @@
         }
     }
         /*---Tarjetas---*/
+
 .productos{
     .proyectos{
         h3{
@@ -216,8 +229,8 @@
                     justify-content: center;
                     align-content: center;
                     flex-wrap: wrap;
-                    margin: 10px;
-                    padding: 10px;
+                    margin: 0;
+                    padding: 0;
                     transition: 0,5s;
             div{
                 width: 35%;
@@ -230,13 +243,12 @@
             
             
             a{
-                background-color:  burlywood;
-                color: #272929;
+                background-color:  nth($colores, 4);
+                color: $color-principal;
                 padding: 3px;
                 margin: 5px;
                 font-family: 'Poltawski Nowy', serif;
-                color: white;
-                background-color: coral;
+                
                 border-radius: 5px;
             }
             img{
@@ -249,23 +261,14 @@
         
     }
 
+//* GRID*
+
+
     @media screen and (max-width:710px){
-        .grid-galeria{
-        width: 100%;
-        margin-top: 50px;
-        display: grid;
-        grid-template-columns: (3fr,1fr);
-        gap: 5px;
+        .grid-container{
         display: none;
-    }
+        }
     
-    .grid-galeria div img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        padding: 1px;
-        
-    }
     }
 
     /*---Grid-galeria---*/
@@ -302,8 +305,8 @@
                     justify-content: center;
                     align-content: center;
                     flex-wrap: wrap;
-                    margin: 10px;
-                    padding: 10px;
+                    margin: 0;
+                    padding: 0;
                     transition: 0,5s;
             div{
                 width: 50%;
@@ -314,14 +317,12 @@
 
         div{
             a{
-                background-color:  burlywood;
-                color: #272929;
+                background-color:  nth($colores, 4);
+                color: $color-principal;
                 padding: 10px;
                 margin: 10px;
                 font-size: 15px;
                 font-family: 'Poltawski Nowy', serif;
-                color: white;
-                background-color: coral;
                 border-radius: 5px;
             }
             img{
@@ -359,8 +360,8 @@
                         justify-content: center;
                         align-content: center;
                         flex-wrap: wrap;
-                        margin: 10px;
-                        padding: 10px;
+                        margin: 0;
+                        padding: 0;
                         transition: 0,5s;
                 div{
                     width: 80%;
@@ -371,14 +372,12 @@
     
             div{
                 a{
-                    background-color:  burlywood;
-                    color: #272929;
+                    background-color:  nth($colores, 4);
+                    color: $color-principal;
                     padding: 10px;
                     margin: 10px;
                     font-size: 15px;
                     font-family: 'Poltawski Nowy', serif;
-                    color: white;
-                    background-color: coral;
                     border-radius: 5px;
                 }
                 img{
@@ -477,6 +476,38 @@
     
     }
     
+    @media screen and (max-width:420px){
+
+        .productos{
+            h2{
+                color: nth($colores,1);
+                text-align: center;
+                letter-spacing: 15px;
+                font-weight: 15px;
+                font-size: nth($font-size, 5);
+                font-family: 'Poltawski Nowy', serif;
+                padding-top: 18px;
+            }
+            p{
+                color: nth($colores,1);
+                padding: 3px;
+                margin: 0;
+                text-align: center;
+                font-family: 'Poltawski Nowy', serif;
+                font-size: nth($font-size, 4);
+
+            }
+
+        }
+
+
+
+    }
+
+
+
+
+
     @media screen and (max-width:320px){
 
         .carousel-item{
@@ -511,26 +542,24 @@
                             justify-content: center;
                             align-content: center;
                             flex-wrap: wrap;
-                            margin: 10px;
-                            padding: 10px;
+                            margin: 0;
+                            padding: 0;
                             transition: 0,5s;
                     div{
-                        width: 100%;
-                        margin: 12px;
+                        width: 90%;
+                        margin: 10px;
                         box-sizing: 10px;
                     }
                 }
         
                 div{
                     a{
-                        background-color:  burlywood;
-                        color: #272929;
+                        background-color:  nth($colores, 4);
+                        color:  $color-principal;
                         padding: 10px;
                         margin: 10px;
                         font-size: 15px;
                         font-family: 'Poltawski Nowy', serif;
-                        color: white;
-                        background-color: coral;
                         border-radius: 5px;
                     }
                     img{
@@ -604,6 +633,43 @@
     
 }
 
+@media screen and (max-width:430px){
+.contacto{
+    h2{
+        color: nth($colores, 3);
+        background-color: $color-secundario;
+        border:  nth($colores, 2);
+        letter-spacing: 2px;
+        border-radius: 5px;
+        padding: 2px;
+        margin: 0;
+        font-size: nth($font-size, 5);
+        font-family: 'Poltawski Nowy', serif;;
+}
+}
+
+
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+        div{
+            color: #272929;
+            border-radius: 1px white solid;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+
+}
+
+
+
+
 /*---Accesorios---*/
 
 @media screen and (max-width:1000px){
@@ -665,25 +731,286 @@
 
 }
 
-@media screen and (max-width:400px){
 
+@media screen and (max-width:690px){
+.accesorios{
     .imagen-accesorios{
         p{
-            font-size: 20px;
-            padding: 10px;
+            color: nth($colores, 3);
+            background-color: $color-secundario;
+            border:  nth($colores, 2);
+            border-radius: 3px;
+            padding: 1px;
+            width: 100%;
+            margin: auto;
+            @include flex (flex, center, center);
+            font-size: nth($font-size, 4);
             text-align: center;
             font-family: 'Poltawski Nowy', serif;
         }
     }
+    }
+    
+}
+
+@media screen and (max-width:610px){
+    .accesorios{
+        .accesorios-tarjetas{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                div{   
+                    border: 2px solid black;
+                width: 290px;
+                height: 400px;
+                text-align: center;
+                margin: 18px;
+                box-sizing: 1px;
+                border-radius: 15px;
+                object-fit: cover;
+                -webkit-box-shadow: 6px -6px 14px 1px rgba(98, 94, 94, 0.477);
+            -moz-box-shadow: 6px -6px 14px 1px rgba(98, 94, 94, 0.477);
+            box-shadow: 6px -6px 14px 1px rgba(98, 94, 94, 0.477);
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+                object-fit: cover;
+                -webkit-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+            -moz-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+            box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+            }
+                }
+    
+            img{
+            width: 100%;
+            height: 270px;
+            border-radius: 11px;
+            }
+            h3{
+            background-color: nth($colores, 4);
+            color: $color-principal;
+            padding: 10px 0 10px 0;
+            margin: 15px 0 15px 0;
+            font-family: 'Poltawski Nowy', serif;;
+            font-size: 20px;
+            text-align: center;
+            }
+            a{
+            background-color: nth($colores, 4);
+            color: $color-principal;
+            padding: 5px;
+            margin: 15px;
+            font-family: 'Poltawski Nowy', serif;
+            text-decoration: none;
+            list-style: none;
+            transition: 0.5s;
+            &:hover{
+            color: rgb(240, 233, 233);
+            background-color: rgb(47, 46, 46);
+            border-radius: 5px;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width:570px){
+    .accesorios{
+        .imagen-accesorios{
+            p{
+                color: nth($colores, 3);
+                background-color: $color-secundario;
+                border:  nth($colores, 2);
+                border-radius: 3px;
+                padding: 1px;
+                width: 100%;
+                margin: auto;
+                @include flex (flex, center, center);
+                font-size: nth($font-size, 4);
+                text-align: center;
+                font-family: 'Poltawski Nowy', serif;
+                }
+            }
+        
+
+            .accesorios-tarjetas{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0;
+                    div{   
+                        border: 2px solid black;
+                    width: 290px;
+                    height: 400px;
+                    text-align: center;
+                    margin: 18px;
+                    box-sizing: 1px;
+                    border-radius: 15px;
+                    object-fit: cover;
+                    -webkit-box-shadow: 6px -6px 14px 1px rgba(98, 94, 94, 0.477);
+                -moz-box-shadow: 6px -6px 14px 1px rgba(98, 94, 94, 0.477);
+                box-shadow: 6px -6px 14px 1px rgba(98, 94, 94, 0.477);
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.1);
+                    object-fit: cover;
+                    -webkit-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+                -moz-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+                box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+                }
+                    }
+        
+                img{
+                width: 100%;
+                height: 270px;
+                border-radius: 11px;
+                }
+                h3{
+                background-color: nth($colores, 4);
+                color: $color-principal;
+                padding: 10px 0 10px 0;
+                margin: 15px 0 15px 0;
+                font-family: 'Poltawski Nowy', serif;;
+                font-size: 20px;
+                text-align: center;
+                }
+                a{
+                background-color: nth($colores, 4);
+                color: $color-principal;
+                padding: 5px;
+                margin: 15px;
+                font-family: 'Poltawski Nowy', serif;
+                text-decoration: none;
+                list-style: none;
+                transition: 0.5s;
+                &:hover{
+                color: rgb(240, 233, 233);
+                background-color: rgb(47, 46, 46);
+                border-radius: 5px;
+                    }
+                }
+            }
+        }
+    
+
+
+    }
+
+    @media screen and (max-width:490px){
+
+        .accesorios{
+                h2{
+                    color: nth($colores, 3);
+                    background-color: $color-secundario;
+                    border:  nth($colores, 2);
+                    border-radius: 5px;
+                    padding: 3px;
+                    width: 309px;
+                    margin: auto;
+                    @include flex (flex, center, center);
+                    font-size: nth($font-size, 3);
+                    text-align: center;
+                    font-family: 'Poltawski Nowy', serif;
+                }
+            
+    }
+}
+
+@media screen and (max-width:320px){
+
+    .accesorios{
+        .imagen-accesorios{
+            p{
+                color: nth($colores, 3);
+                background-color: $color-secundario;
+                border:  nth($colores, 2);
+                border-radius: 3px;
+                padding: 0;
+                width: 100%;
+                margin: auto;
+                @include flex (flex, center, center);
+                font-size: nth($font-size, 9);
+                text-align: center;
+                font-family: 'Poltawski Nowy', serif;
+            }
+        }
+
+        .accesorios-tarjetas{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            div{   
+                border: 2px solid black;
+            width: 290px;
+            height: 400px;
+            text-align: center;
+            margin: 18px;
+            box-sizing: 1px;
+            border-radius: 15px;
+            object-fit: cover;
+            -webkit-box-shadow: 6px -6px 14px 1px rgba(98, 94, 94, 0.477);
+        -moz-box-shadow: 6px -6px 14px 1px rgba(98, 94, 94, 0.477);
+        box-shadow: 6px -6px 14px 1px rgba(98, 94, 94, 0.477);
+        transition: 1s;
+        &:hover{
+            transform: scale(1.1);
+            object-fit: cover;
+            -webkit-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+        -moz-box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+        box-shadow: 6px -6px 14px 1px rgba(0,0,0,0.72);
+        }
+            }
+
+        img{
+        width: 100%;
+        height: 270px;
+        border-radius: 11px;
+        }
+        h3{
+        background-color: nth($colores, 4);
+        color: $color-principal;
+        padding: 10px 0 10px 0;
+        margin: 15px 0 15px 0;
+        font-family: 'Poltawski Nowy', serif;;
+        font-size: 20px;
+        text-align: center;
+        }
+        a{
+        background-color: nth($colores, 4);
+        color: $color-principal;
+        padding: 5px;
+        margin: 15px;
+        font-family: 'Poltawski Nowy', serif;
+        text-decoration: none;
+        list-style: none;
+        transition: 0.5s;
+        &:hover{
+        color: rgb(240, 233, 233);
+        background-color: rgb(47, 46, 46);
+        border-radius: 5px;
+                }
+            }
+        }
+    }
+}
 
     /*---indumentaria---*/
-
-    .indumentaria{
-        p{
+    @media screen and (max-width:420px){
+        .indumentaria{
+        h2{
             display: flex;
             justify-content: center;
-            font-size: 20px;
-            padding: 10px;
+            font-size: 18px;
+            padding: 3px;
+            width: 300px;
+            margin: auto;
             text-align: center;
             font-family: 'Poltawski Nowy', serif;
         }
@@ -691,16 +1018,22 @@
 
     /*---Ofertas---*/
     .ofertas{
-        p{
+        h2{
             display: flex;
             justify-content: center;
-            font-size: 20px;
-            padding: 10px;
+            font-size: 18px;
+            padding: 3px;
+            width: 300px;
+            margin: auto;
             text-align: center;
             font-family: 'Poltawski Nowy', serif;
+            }
         }
     }
+    
 
-    }
+    
+
+
 
 

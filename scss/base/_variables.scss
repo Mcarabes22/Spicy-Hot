@@ -1,14 +1,15 @@
 //* VARIABLE
-$color-principal: burlywood;
-$color-secundario: black;
+$color-principal: rgb(193, 193, 193);
+$color-secundario: rgba(0,0,0,0.6);
 
 //* LISTAS
 $colores:
 black,
-rgba(255, 255, 255, 0.51),
-burlywood,
-orangered,
-rgb(40, 39, 50);
+rgba(0,0,0,0.1),
+#e2ecec,
+rgba(0, 0, 0, 0.545),
+rgb(40, 39, 50),
+white;
 
 $font-size:
 12px,
@@ -18,8 +19,8 @@ $font-size:
 30px,
 35px,
 40px,
-50px;
-
+50px,
+19px;
 //* EXTENDS
 
 %flex{
