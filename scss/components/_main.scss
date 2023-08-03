@@ -95,12 +95,12 @@ section {
                 padding-top: 18px;
         }
         p{
-            color: nth($colores,1);
-            padding: 3px;
+            color: nth($colores,3);
+            padding: 0;
             margin: 0;
             text-align: center;
             font-family: 'Poltawski Nowy', serif;
-            font-size: nth($font-size, 4);
+            font-size: nth($font-size, 3);
         }
     
 }
@@ -146,14 +146,16 @@ section {
         font-weight: bold;
         font-family: 'Poltawski Nowy', serif;
         margin: 1px;
-        padding: 15px;
+        padding: 0;
     }
 
-    a{
+    
+    
+    button{
         background-color: nth($colores, 4);
         color: $color-principal;
-        padding: 5px;
-        margin: 20px;
+        padding: 3px;
+        margin: 3px;
         font-family: 'Poltawski Nowy', serif;
         transition: 0.5s;
         &:hover{

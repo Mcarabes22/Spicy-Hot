@@ -120,12 +120,12 @@ section div a {
     font-family: 'Poltawski Nowy', serif;
     padding-top: 18px; }
   .productos p {
-    color: black;
-    padding: 3px;
+    color: #e2ecec;
+    padding: 0;
     margin: 0;
     text-align: center;
     font-family: 'Poltawski Nowy', serif;
-    font-size: 25px; }
+    font-size: 20px; }
 
 .producto-contenedor {
   display: flex;
@@ -163,15 +163,15 @@ section div a {
     font-weight: bold;
     font-family: 'Poltawski Nowy', serif;
     margin: 1px;
-    padding: 15px; }
-  .producto-contenedor a {
+    padding: 0; }
+  .producto-contenedor button {
     background-color: rgba(0, 0, 0, 0.545);
     color: #c1c1c1;
-    padding: 5px;
-    margin: 20px;
+    padding: 3px;
+    margin: 3px;
     font-family: 'Poltawski Nowy', serif;
     transition: 0.5s; }
-    .producto-contenedor a:hover {
+    .producto-contenedor button:hover {
       color: #f0e9e9;
       background-color: #2f2e2e;
       border-radius: 5px; }
