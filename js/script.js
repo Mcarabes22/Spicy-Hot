@@ -1,26 +1,27 @@
 
-const productos = [
-    {
-        id: 1,
-        nombre: 'Daily Use',
-        precio: 80000
-    },
-    {
-        id: 2,
-        nombre: 'BMX',
-        precio: 110000
-    },
-    {
-        id: 3,
-        nombre: 'The Monster',
-        precio: 1150000
-    },
-    {
-        id: 4,
-        nombre: 'Electric Bike',
-        precio: 260000
-    }
-];
+fetch('./data.json')
+    .then(response => response.json())
+    .then(productosData => {
+
+        const productos = productosData;
+
+
+const botonesAgregarCarrito = document.querySelectorAll('.agregar-carrito');
+
+
+botonesAgregarCarrito.forEach(boton => {
+    boton.addEventListener('click', () => {
+        const nombre = boton.getAttribute('data-nombre');
+        const precio = boton.getAttribute('data-precio');
+
+
+        swal.fire({
+            title: '¡Agregado al Carrito!',
+            text: `${nombre} se ha agregado al carrito por ${precio}`,
+            icon: 'success'
+        });
+    });
+});
 
 // Obtener los elementos del DOM
 const agregarFormularios = document.querySelectorAll('.producto-contenedor form');
@@ -95,6 +96,10 @@ let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 mostrarCarrito();
 calcularTotalCompra();
 
+})
+.catch(error => {
+    console.error('Error al cargar los productos:', error);
+});
 
 
 

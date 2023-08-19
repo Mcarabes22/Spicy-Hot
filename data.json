@@ -1,0 +1,6 @@
+[
+    {"nombre": "Daily Use","precio": 80000, "id": 1},
+    {"nombre": "BMX", "precio": 110000, "id": 2},
+    {"nombre": "The Monster", "precio": 1150000, "id": 3},
+    { "nombre": "Electric Bike", "precio": 260000, "id": 4}
+]
